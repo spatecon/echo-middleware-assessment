@@ -1,6 +1,7 @@
 # Build echo middleware
 
 Example project of test assessment from imaginary company. Full text of the task can be found [here](docs/testtask.pdf)
+Video [here](https://youtu.be/Lsh3ylmXdJ8)
 
 ## Task
 
