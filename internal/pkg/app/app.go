@@ -2,7 +2,6 @@ package app
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/labstack/echo/v4"
 
@@ -38,7 +37,7 @@ func (a *App) Run() error {
 
 	err := a.echo.Start(":8080")
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
 
 	return nil
