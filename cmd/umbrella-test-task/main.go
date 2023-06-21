@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/spatecon/echo-middleware-assessment/internal/pkg/app"
+	app "github.com/spatecon/echo-middleware-assessment/internal/app/umbrella-test-task"
 )
 
 func main() {

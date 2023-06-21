@@ -5,9 +5,9 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"github.com/spatecon/echo-middleware-assessment/internal/app/endpoint"
-	"github.com/spatecon/echo-middleware-assessment/internal/app/mw"
-	"github.com/spatecon/echo-middleware-assessment/internal/app/service"
+	"github.com/spatecon/echo-middleware-assessment/internal/pkg/endpoint"
+	"github.com/spatecon/echo-middleware-assessment/internal/pkg/mw"
+	"github.com/spatecon/echo-middleware-assessment/internal/pkg/service"
 )
 
 type App struct {
