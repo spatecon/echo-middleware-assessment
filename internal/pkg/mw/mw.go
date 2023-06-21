@@ -1,10 +1,10 @@
 package mw
 
 import (
-	"log"
 	"strings"
 
 	"github.com/labstack/echo/v4"
+	"github.com/rs/zerolog/log"
 )
 
 const roleAdmin = "admin"
@@ -14,7 +14,7 @@ func RoleCheck(next echo.HandlerFunc) echo.HandlerFunc {
 		val := ctx.Request().Header.Get("User-Role")
 
 		if strings.EqualFold(val, roleAdmin) {
-			log.Println("red button user detected")
+			log.Info().Msg("red button user detected")
 		}
 
 		err := next(ctx)

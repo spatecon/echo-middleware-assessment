@@ -1,7 +1,7 @@
 package main
 
 import (
-	"log"
+	"github.com/rs/zerolog/log"
 
 	app "github.com/spatecon/echo-middleware-assessment/internal/app/umbrella-test-task"
 )
@@ -9,11 +9,11 @@ import (
 func main() {
 	a, err := app.New()
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal().Msg(err.Error())
 	}
 
 	err = a.Run()
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal().Msg(err.Error())
 	}
 }

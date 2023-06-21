@@ -1,9 +1,8 @@
 package app
 
 import (
-	"fmt"
-
 	"github.com/labstack/echo/v4"
+	"github.com/rs/zerolog/log"
 
 	"github.com/spatecon/echo-middleware-assessment/internal/pkg/endpoint"
 	"github.com/spatecon/echo-middleware-assessment/internal/pkg/mw"
@@ -33,7 +32,7 @@ func New() (*App, error) {
 }
 
 func (a *App) Run() error {
-	fmt.Println("server running")
+	log.Info().Msg("server running")
 
 	err := a.echo.Start(":8080")
 	if err != nil {
