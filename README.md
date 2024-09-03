@@ -32,6 +32,6 @@ You can share the source code or use it in learning purposes.
 
 ## Author
 
-Ilya Pavlyukov<br>
-i [at] spate.com<br>
+Ilia Pavliukov<br>
+i [at] ela.sh<br>
 2022
